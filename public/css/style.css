@@ -27,7 +27,7 @@ h1 {
 #coffeeIcon {
     width: 2.5rem;
     height: 2.5rem;
-    margin-top: 0.2rem;
+    margin-top: 2rem;
 }
 .title-container {
     display: flex;
@@ -60,8 +60,38 @@ h1 {
 .menu-container {
     background-color: #EFDACF;
 }
-ul {
-    list-style-type: none;
-    font-size: 25px;
-    text-decoration: none;
+.menu-container__items {
+    display: grid;
+    margin-left: 2rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.5rem;
 }
+.item-button {
+    text-align: left;
+    width: 70%;
+    height: 4rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    border-color: #FFF7F4 ;
+    background-color: #FFF7F4;
+    margin-bottom: 0.5rem;
+    font-size: 25px;
+    font-weight: bold;
+    color: #331403;
+    padding-left: 1.5rem;
+}
+.item-button:nth-child(1) {
+    margin-top: 1rem;
+}
+
+.item-button:hover {
+    cursor: pointer;
+    background-color: #feede7;
+    color: #4d1e04;
+}
+#sunIcon {
+    height: 1.8rem;
+    width: 1.8rem;
+
+}
+

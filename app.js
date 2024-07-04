@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const jsonData = require('./products.json');
 
 
 // Serve static files from the 'public' directoryapp.use(express.static(path.join(__dirname, 'public')));
@@ -12,7 +13,7 @@ app.set('views', path.join(__dirname, '/views'));
 
 // Route to render a random number
 app.get('/tea', (req, res) => {
-    res.render('tea');
+    res.render('tea', { tea: jsonData.tea });
 });
 
 // Route to render the home page

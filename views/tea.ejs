@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/itemsStyle.css">
+    <title>Tea</title> 
 </head>
 <body>
-    
+    <span class="arrow-container">
+      <a href="/"><p><i class="arrow left"></i></p></a>
+   </span>
+
+   <header>
+    <section class="header-title">
+      <h1 class="tea-title">ЧАЙ</h1>
+      <img src="/pictures/teaImg.png" alt="">
+    </section>
+     <p>Після води, чай - найбільш споживаний напій на Землі.
+     </p>
+   </header>
+
+   <section class="products-container">
+      <section class="product-card">
+    <ul>
+        <% tea.forEach(tea=> { %>
+              <li> Name: <%= tea.name %>, Items: <%= tea.items %>, Price: <%= tea.price  %>
+              </li>
+              <% }) %>
+          </ul> 
+      </section>
+   </section>
+ 
 </body>
 </html>
