@@ -9,7 +9,8 @@ let coffeeQuote = "Для пиття використовуються два в�
 "і м'якший смак, тоді як робуста більш кисла і гірка.";
 
 //imgs
-let teaImg = "/pictures/teaImg.png";
+let teaImg = "/pictures/tea/teaImg.png";
+let coffeeImg = "/pictures/coffee/coffeeImg.png";
 
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
@@ -30,10 +31,10 @@ app.get('/tea', (req, res) => {
 });
 app.get('/coffee', (req, res) => {
     res.render('productItem',
-        { item: jsonData.tea, 
+        { item: jsonData.coffee, 
         title: 'Coffee',
         titleUA: 'КАВА',
-        img: teaImg,
+        img: coffeeImg,
         quote: coffeeQuote,
      });
 });
