@@ -4,7 +4,15 @@
             "id": 1,
             "name": "Чай в асортименті",
             "items": "зелений, чорний, фруктовий",
-            "price": "40 грн"
+            "price": "40 грн",
+            "icon":  "/pictures/tea/ordinaryTea.png"
+        },
+
+        {
+            "id": 2,
+            "name": " Травяний чай",
+            "price": "50 грн",
+            "icon":  "/pictures/tea/herbalTea.png"
         }
     ]
 }

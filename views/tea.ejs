@@ -8,28 +8,36 @@
 </head>
 <body>
     <span class="arrow-container">
-      <a href="/"><p><i class="arrow left"></i></p></a>
-   </span>
+        <a href="/"><p><i class="arrow left"></i></p></a>
+    </span>
 
-   <header>
-    <section class="header-title">
-      <h1 class="tea-title">ЧАЙ</h1>
-      <img src="/pictures/teaImg.png" alt="">
+    <header>
+        <section class="header-title">
+            <h1 id="title">ЧАЙ</h1>
+            <img src="/pictures/teaImg.png" alt="">
+        </section>
+        <p class="quote">Після води, чай - найбільш споживаний напій на Землі.</p>
+    </header>
+
+    <section class="products-container">
+            <% tea.forEach(tea => { %>
+                <section class="product-card">
+                    <section>
+                <h2 class="title-item"><%= tea.name %></h2>
+                <% if (tea.items) { %>
+                    <p class="items"><%= tea.items %></p>
+                <% } else {%>
+                    <br>
+                    <% } %>
+                    <p class="price">  <%= tea.price  %></p>
+                    </section>
+                    <section>
+                    <img src="<%=tea.icon %>" alt="<%=tea.icon %>" class="icon">
+                </section>
+            </section>
+            <% }) %>
+     
+   
     </section>
-     <p>Після води, чай - найбільш споживаний напій на Землі.
-     </p>
-   </header>
-
-   <section class="products-container">
-      <section class="product-card">
-    <ul>
-        <% tea.forEach(tea=> { %>
-              <li> Name: <%= tea.name %>, Items: <%= tea.items %>, Price: <%= tea.price  %>
-              </li>
-              <% }) %>
-          </ul> 
-      </section>
-   </section>
- 
 </body>
 </html>

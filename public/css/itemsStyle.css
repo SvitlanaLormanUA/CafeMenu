@@ -13,8 +13,8 @@ body {
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 0.5rem;
-    margin: 1rem;
-    
+    margin: 3rem;
+    margin-bottom: 0;
   }
   .left {
     transform: rotate(135deg);
@@ -23,13 +23,13 @@ body {
   .arrow:hover {
     cursor: pointer;
   }
- .tea-title {
+
+   /*HEADER*/
+
+ .title {
     color:#331403;
     text-align: center;
  }
- 
-
- /*HEADER*/
  .header-title {
     display: flex;
     justify-content: center;
@@ -37,13 +37,18 @@ body {
     gap: 1rem;
     margin-left: 3rem;
  }
+ .header-title img {
+    margin-top: 0;
+ }
  header {
     margin-left: 2rem;
+    margin-bottom: 0rem;
  }
  h1 {
     font-size: 30px;
  }
- p:nth-child(2) {
+.quote {
+    margin-top: 0rem;
     font-style: italic;
     display: flex;
     justify-content: center;
@@ -52,8 +57,28 @@ body {
 
  /*PRODUCTS*/
  .products-container {
-    color: #EAD4C8;
+    background-color: #EFDACF;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
  }
- ul {
-    color: #331403;
+ .product-card {
+    background-color: #FFF7F4;
+    padding: 1rem;
+    border-bottom: 1px solid #EFDACF;
+    display: flex;
+    justify-content: space-between;
  }
+
+ .title-item {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+ }
+ .items {
+    font-size: 14px;
+    margin-top: 0.4rem;
+ }
+.price,
+.items {
+    margin-left: 5px;
+}
