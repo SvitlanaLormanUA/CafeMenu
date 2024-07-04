@@ -1,0 +1,25 @@
+<% item.forEach(item => { %>
+    <section class="product-card">
+        <section>
+            <h2 class="title-item"><%= item.name %></h2>
+            <% if (item.items) { %>
+                <p class="items"><%= item.items %></p>
+            <% } else { %>
+                <br>
+            <% } %>
+            <section class="product-card__bottom">
+             <span class="price"><%= item.price %></span>
+             <% if (item.allergies) { %>
+                <section class="allergies-container">
+                    <img src="/pictures/allergy.png" alt="" id="allergy-icon">
+                    <p class="allergies"> <%= item.allergies %></p>
+                </section>
+               
+            <% } %>
+            </section>
+        </section>
+            <img src="<%= item.icon %>" alt="<%= item.name %>" class="icon">
+       
+    </section>
+    <% }) %>
+    

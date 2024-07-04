@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/itemsStyle.css">
+    <title><%= title %></title>
+</head>
+<body>
+    <span class="arrow-container">
+        <a href="/"><p><i class="arrow left"></i></p></a>
+    </span>
+
+    <header>
+        <section class="header-title">
+            <h1 id="title"><%= titleUA %></h1>
+            <% if (img) { %>
+              <img src=<%= img%> alt="">
+            <%} %>
+        </section>
+        <p class="quote"><%= quote %></p>
+    </header>
+
+    <section class="products-container">
+        <%- include('partials/items') %>
+    </section>
+</body>
+</html>

@@ -4,15 +4,41 @@
             "id": 1,
             "name": "Чай в асортименті",
             "items": "зелений, чорний, фруктовий",
-            "price": "40 грн",
+            "price": 40,
             "icon":  "/pictures/tea/ordinaryTea.png"
         },
 
         {
             "id": 2,
-            "name": " Травяний чай",
-            "price": "50 грн",
+            "name": "Травяний чай",
+            "price": 50,
             "icon":  "/pictures/tea/herbalTea.png"
+        },
+
+        {
+            "id": 3,
+            "name": "Матча",
+            "price": 60,
+            "icon":  "/pictures/tea/matcha.png",
+            "allergies": "Л, Г, А, МП"
+
+        },
+        {
+            "id": 4,
+            "name": "Матча на безлактозному",
+            "price": 70,
+            "icon":  "/pictures/tea/matcha.png",
+            "allergies": "Г, А, МП"
+
+        },
+        {
+            "id": 5,
+            "name": "Матча на рослинному",
+            "items": "бананове, мигдалеве, кокосове",
+            "price": 80,
+            "icon":  "/pictures/tea/matcha.png",
+            "allergies": "СБ, Г, А"
+
         }
     ]
 }
