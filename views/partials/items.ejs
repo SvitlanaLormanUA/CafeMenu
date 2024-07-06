@@ -7,19 +7,41 @@
             <% } else { %>
                 <br>
             <% } %>
-            <section class="product-card__bottom">
-             <span class="price"><%= item.price %></span>
-             <% if (item.allergies) { %>
-                <section class="allergies-container">
-                    <img src="/pictures/allergy.png" alt="" id="allergy-icon">
-                    <p class="allergies"> <%= item.allergies %></p>
-                </section>
-               
+
+            <% if (item.description) { %>
+                <p class="description">
+                    <span class="short-description"><%= item.description.substring(0, 50) %>...</span>
+                    <% if (item.toWaiter) { %>
+                    <span class="full-description"><%= item.description %>
+                    <br>
+                   <%= item.toWaiter%> 
+                    </span>
+                    <% } else {%>
+                    <span class="full-description"><%= item.description %></span>
+                    <% } %>
+                    <a href="#" class="see-more">розгорнути</a>
+                </p>
+            <% } else { %>
+                <br>
             <% } %>
+
+            <section class="product-card__bottom">
+                <span class="price"><%= item.price %></span>
+                <% if (item.allergies) { %>
+                    <section class="allergies-container">
+                        <img src="/pictures/allergyIcon.png" alt="Allergy icon" id="allergy-icon">
+                        <p class="allergies"><%= item.allergies %></p>
+                    </section>
+                <% } %>
+                <% if (item.volume) %>
+                <section class="volume-container">
+                    <img src="/pictures/coffee/coffeeVolume.png" alt="" id="coffeeVolume">
+                    <p class="volume"><%= item.volume %></p>
+                </section>
             </section>
         </section>
+        <% if (item.icon) { %>
             <img src="<%= item.icon %>" alt="<%= item.name %>" class="icon">
-       
+        <% } %>
     </section>
-    <% }) %>
-    
+<% }) %>

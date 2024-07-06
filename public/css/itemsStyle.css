@@ -1,9 +1,15 @@
 /*GENERAL*/
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
 body {
     background-color: #FFE9DD ;
     color: #331403;
     padding: 0;
     margin: 0;
+    overflow-wrap: break-word;
+    font-family: "Baskervville SC", serif;
+    font-style: normal;
     overflow-wrap: break-word;
 }
 
@@ -90,15 +96,22 @@ body {
    color: #000000;
    border-radius: 5px;
    border: 1px #D99F8A solid ;
-   margin-top: 8px;
+   margin: 0;
+   margin-top: 15px;
    max-height: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Courier New', Courier, monospace;
+
  
 }
 .price::after {
     content: " грн";
 }
 .allergies-container {
-   display: flex;   
+   display: flex;  
+   margin-top: 5px; 
 }
 .product-card__bottom {
    display: flex;
@@ -107,5 +120,59 @@ body {
 #allergy-icon{
    width: 2rem;
    height: 2rem;
-   margin-top: 8px;
+   margin-top: 10px;
+}
+.icon {
+   max-width: 14rem;
+   max-height: 12rem;
+   border-radius: 10px;
+
+}
+.description {
+   font-size: 16px;
+   font-family: "Baskervville SC", serif;
+    font-style: normal;
+   color: black;
+   display: block;
+   margin-top: 10px;
+   margin-right: 10px;
+}
+
+.see-more {
+   color: rgb(94, 94, 94);
+   cursor: pointer;
+   text-decoration: none;
+   font-size: 18px;
+   font-style: italic;
+   font-family: "Baskervville SC", serif;
+    font-style: normal;
+}
+.full-description {
+   display: none;
+   font-size: 16px;
+   font-family: 'IBM Plex Sans', sans-serif;
+   color: black;
+   margin-top: 10px;
+   font-family: "Baskervville SC", serif;
+    font-style: normal;
+} 
+#coffeeVolume {
+   max-width: 3rem;
+   max-height: 3rem;
+   margin-right:0;
+  margin-top: 0;
+}
+.volume-container {
+   display: flex;
+   font-size: 15px;
+   font-family: 'Courier New', Courier, monospace;
+   text-align: center;
+}
+.volume {
+   margin-top: 1.5rem;
+   margin-right: 5px;
+}
+.volume:after {
+   content: " мл";
+
 }

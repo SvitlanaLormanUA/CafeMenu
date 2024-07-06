@@ -5,30 +5,34 @@
             "name": "Чай в асортименті",
             "items": "зелений, чорний, фруктовий",
             "price": 40,
-            "icon":  "/pictures/tea/ordinaryTea.png"
+            "icon":  "/pictures/tea/ordinaryTea.jpeg", 
+            "volume": "300/500"
         },
 
         {
             "id": 2,
             "name": "Травяний чай",
             "price": 50,
-            "icon":  "/pictures/tea/herbalTea.png"
+            "icon":  "/pictures/tea/herbalTea.jpeg",
+             "volume": "300/500"
         },
 
         {
             "id": 3,
             "name": "Матча",
             "price": 60,
-            "icon":  "/pictures/tea/matcha.png",
-            "allergies": "Л, Г, А, МП"
+            "icon":  "/pictures/tea/matcha.jpeg",
+            "allergies": "Л, Г, А, МП",
+             "volume": "300/500"
 
         },
         {
             "id": 4,
             "name": "Матча на безлактозному",
             "price": 70,
-            "icon":  "/pictures/tea/matcha.png",
-            "allergies": "Г, А, МП"
+            "icon":  "/pictures/tea/matcha.jpeg",
+            "allergies": "Г, А, МП",
+             "volume": "300/500"
 
         },
         {
@@ -36,12 +40,66 @@
             "name": "Матча на рослинному",
             "items": "бананове, мигдалеве, кокосове",
             "price": 80,
-            "icon":  "/pictures/tea/matcha.png",
-            "allergies": "СБ, Г, А"
+            "icon":  "/pictures/tea/matcha.jpeg",
+            "allergies": "СБ, Г, А",
+             "volume": "300/500"
 
         }
     ],
     "coffee": [
-       
+        {
+            "id": 1,
+            "name": "Еспресо",
+            "description": "Порція інтенсивної кави з густою текстурою, насиченим ароматом та характерною вершковою пінкою. ",
+            "toWaiter":"Зерно можете уточнити у офіціанта.",
+            "price": 40,
+            "icon":  "/pictures/coffee/espresso.jpeg",
+            "volume": 30
+        },
+        {
+            "id": 2,
+            "name": "Американо",
+            "description": "Менш інтенсивна та більш м'яка кава, порівняно зі звичайним еспресо. ",
+            "toWaiter":"Зерно можете уточнити у офіціанта.",
+            "price": "50/60",
+            "icon":  "/pictures/coffee/americano.jpeg",
+            "volume": "250/300"
+        },
+        {
+            "id": 3,
+            "name": "Фільтр кава ",
+            "description": "Чорна кава, зварена альтернативним методом заварювання, де вода проходить крізь змелене зерно, без штучного тиску. Тому кава має більш мʼякий та менш кислотний смак ніж еспресо",
+            "toWaiter":"Зерно та смак можете уточнити у офіціанта. Є можливість замовити без кофеїну",
+            "price": "65/75",
+            "icon":  "/pictures/coffee/americano.jpeg",
+            "volume": "250/300"
+        },
+        {
+            "id": 4,
+            "name": "Капучино L / XL",
+            "description": "Кава з інтенсивною основою - подвійного  еспресо, кремовою текстурою молока та легкою пінкою на поверхні.",
+            "toWaiter":"Зерно можете уточнити у офіціанта.",
+            "price": "55/66",
+            "icon":  "/pictures/coffee/capucchino.jpeg",
+            "volume": "200/350"
+        },
+        {
+            "id": 5,
+            "name": "Капучино на безлактозному L / XL",
+            "description": "Кава з інтенсивною основою - подвійного  еспресо, кремовою текстурою безлактозного молока та легкою пінкою на поверхні.",
+            "toWaiter":"Зерно можете уточнити у офіціанта.",
+            "price": "65/75",
+            "icon":  "/pictures/coffee/capucchino.jpeg",
+            "volume": "200/350"
+        },
+        {
+            "id": 6,
+            "name": "Капучино на рослинному L / XL",
+            "description": "Кава з інтенсивною основою - подвійного  еспресо, кремовою текстурою рослинного молока (бананового, мигдалевого, соєвого, кокосового) та легкою пінкою на поверхні.",
+            "toWaiter":"Зерно можете уточнити у офіціанта.",
+            "price": "75/85",
+            "icon":  "/pictures/coffee/capucchino.jpeg",
+            "volume": "200/350"
+        }
     ]
 }
