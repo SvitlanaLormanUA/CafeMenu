@@ -107,7 +107,7 @@ body {
  
 }
 .price::after {
-    content: " грн";
+    content: "  грн";
 }
 .allergies-container {
    display: flex;  
@@ -122,9 +122,12 @@ body {
    height: 2rem;
    margin-top: 10px;
 }
+.allergies {
+   margin-top: 17px;
+}
 .icon {
-   max-width: 14rem;
-   max-height: 12rem;
+   max-width: 200px;
+   max-height: 160px;
    border-radius: 10px;
 
 }
@@ -175,4 +178,8 @@ body {
 .volume:after {
    content: " мл";
 
+}
+.header-title-icon {
+   max-width: 3.5rem;
+   max-height: 3.5rem;
 }

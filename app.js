@@ -3,23 +3,24 @@ const app = express();
 const path = require('path');
 const jsonData = require('./products.json');
 
-//quotes
+
 let teaQuote = "Після води, чай - найбільш споживаний напій на Землі.";
 let coffeeQuote = "Для пиття використовуються два види кавових зерен: робуста і арабіка. Арабіка має нижчу кислотність" +  
 "і м'якший смак, тоді як робуста більш кисла і гірка.";
+let dessertsQuote = "Шоколад, набагато довше за цукор, був використаний як валюта в стародавніх цивілізаціях. Майя використовували какао-боби в обміні між собою, а Ацтеки вважали шоколад 'їжею богів і використовували його у своїх релігійних церемоніях.";
 
-//imgs
+
 let teaImg = "/pictures/tea/teaImg.png";
 let coffeeImg = "/pictures/coffee/coffeeImg.png";
+let dessertsImg = "/pictures/desserts/dessertIcon.webp";
 
-// Serve static files from the 'public' directory
+
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Set EJS as the templating engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-// Route to render the tea page
+
 app.get('/tea', (req, res) => {
     res.render('productItem',
         { item: jsonData.tea, 
@@ -38,13 +39,20 @@ app.get('/coffee', (req, res) => {
         quote: coffeeQuote,
      });
 });
+app.get('/desserts', (req, res) => {
+    res.render('productItem',
+        { item: jsonData.desserts, 
+        title: 'Desserts',
+        titleUA: 'ДЕСЕРТИ',
+        img: dessertsImg,
+        quote: dessertsQuote,
+     });
+});
 
-// Route to render the home page
 app.get('/', (req, res) => {
     res.render('home');
 });
 
-// Start the server on port 3000
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });

@@ -99,9 +99,6 @@ a:hover {
     background-color: #feede7;
     color: #4d1e04;
 }
-#sunIcon {
-    height: 1.8rem;
-    width: 1.8rem;
-
+.icon {
+    margin-left: 5px;
 }
-

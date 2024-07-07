@@ -33,11 +33,12 @@
                         <p class="allergies"><%= item.allergies %></p>
                     </section>
                 <% } %>
-                <% if (item.volume) %>
+                <% if (item.volume) { %>
                 <section class="volume-container">
                     <img src="/pictures/coffee/coffeeVolume.png" alt="" id="coffeeVolume">
                     <p class="volume"><%= item.volume %></p>
                 </section>
+                <% } %>
             </section>
         </section>
         <% if (item.icon) { %>

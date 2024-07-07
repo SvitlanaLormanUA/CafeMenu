@@ -10,6 +10,24 @@
     .full-description {
         display: none;
     }
+    .price,
+    .volume-container,
+    .allergies {
+        font-size: 14px;
+    }
+    #allergy-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-top: 15px;
+    }
+    #coffeeVolume {
+        width: 1.5rem;
+        height: 2rem;
+        margin-top: 0.8rem;
+    }
+    .icon {
+        margin-left: 5px;
+    }
 }
 
 @media (min-width: 669px) {
@@ -23,5 +41,8 @@
     
     .full-description {
         display: inline;
+    }
+    .icon {
+        margin-left: 5px;
     }
 }
