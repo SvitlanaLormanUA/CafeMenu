@@ -8,11 +8,13 @@ let teaQuote = "Після води, чай - найбільш споживан�
 let coffeeQuote = "Для пиття використовуються два види кавових зерен: робуста і арабіка. Арабіка має нижчу кислотність" +  
 "і м'якший смак, тоді як робуста більш кисла і гірка.";
 let dessertsQuote = "Шоколад, набагато довше за цукор, був використаний як валюта в стародавніх цивілізаціях. Майя використовували какао-боби в обміні між собою, а Ацтеки вважали шоколад 'їжею богів і використовували його у своїх релігійних церемоніях.";
+let otherDrinksQuote = "Вважається, що матча була створена для справжніх самураїв.";
 
 
 let teaImg = "/pictures/tea/teaImg.png";
 let coffeeImg = "/pictures/coffee/coffeeImg.png";
 let dessertsImg = "/pictures/desserts/dessertIcon.webp";
+let otherDrinksImg = "/pictures/otherDrinks/hotChocolateIcon.png";
 
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -37,6 +39,15 @@ app.get('/coffee', (req, res) => {
         titleUA: 'КАВА',
         img: coffeeImg,
         quote: coffeeQuote,
+     });
+});
+app.get('/drinkElse', (req, res) => {
+    res.render('productItem',
+        { item: jsonData.drinkElse, 
+        title: 'Other drinks',
+        titleUA: ' НАПОЇ',
+        img: otherDrinksImg,
+        quote: otherDrinksQuote,
      });
 });
 app.get('/desserts', (req, res) => {
