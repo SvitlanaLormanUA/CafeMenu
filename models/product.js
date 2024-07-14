@@ -1,14 +1,4 @@
 const mongoose = require('mongoose');
-
-mongoose.connect('mongodb://localhost:27017/products', {useNewUrlParser: true, useUnifiedTopology: true})
-    .then(() => {
-        console.log('Mongo connection open');
-    })
-    .catch(err => {
-        console.log('Mongo connection error');
-        console.log(err);
-    });
-
     const productScema = new mongoose.Schema({
         category: {
            type: String,
